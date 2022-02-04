@@ -3,11 +3,19 @@ import Bang from './components/Bang';
 import Dart from './components/Dart';
 import Ludo from './components/Ludo';
 import './styles/styles.scss';
+import { Helmet } from 'react-helmet';
 
 const App = () => (
   <>
+    <Helmet>
+      <title>Game Rules</title>
+    </Helmet>
     <header>
-      <div className="header__left"><Link to="/">Game Rules</Link></div>
+      <div className="header__left">
+        <Link to="/">
+          <img src="/favicon.png" alt="" /> Game Rules
+        </Link>
+      </div>
       <div className="header__right">
         <div className="dropdown">
           <div className="dropbtn">Games</div>
@@ -24,7 +32,7 @@ const App = () => (
       <Routes>
         <Route path="/" element={<h1>Home</h1>} />
         <Route exact path="/games">
-          <Route exact path="bang" element={<Bang/>} />
+          <Route exact path="bang" element={<Bang />} />
           <Route exact path="dart" element={<Dart />} />
           <Route exact path="ludo" element={<Ludo />} />
         </Route>

@@ -1,6 +1,11 @@
+import { Helmet } from 'react-helmet';
+
 const Bang = () => (
   <div className="bang">
-    <h1>BANG! Game Rules</h1>
+    <Helmet>
+      <title>BANG! | Game Rules</title>
+    </Helmet>
+    <h1>BANG!</h1>
     <img src="/img/bang/bang.jpeg" alt="" />
     <p>
       BANG! is a shootout game, in Spaghetti Western style, between a group of
@@ -208,8 +213,9 @@ const Bang = () => (
     </p>
     <p>
       Normally you can reach only targets (players or cards) within a distance
-      of 1 (note the <img src="/img/bang/game11.jpeg" alt="" className="img-in-text" /> of your Colt .45
-      on your playing board).
+      of 1 (note the{' '}
+      <img src="/img/bang/game11.jpeg" alt="" className="img-in-text" /> of your
+      Colt .45 on your playing board).
     </p>
     <p>
       When a character is eliminated, he is no longer counted when evaluating

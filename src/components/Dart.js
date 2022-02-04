@@ -1,6 +1,11 @@
+import { Helmet } from 'react-helmet';
+
 const Dart = () => (
   <>
-    <h1>Dart Rules</h1>
+    <Helmet>
+      <title>Dart | Game Rules</title>
+    </Helmet>
+    <h1>Dart</h1>
     <img src="/img/dart/dart.jpeg" alt="" />
     <p>
       Being a “sport” – many argue it is a game – mainly played in pubs and

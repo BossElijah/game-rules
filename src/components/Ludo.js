@@ -1,7 +1,11 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const Ludo = () => (
   <>
+    <Helmet>
+      <title>Ludo | Game Rules</title>
+    </Helmet>
     <h1>Ludo</h1>
     <img src="/img/ludo/ludo.png" alt="" />
     <p>

@@ -12,11 +12,20 @@ header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.header__left a {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
+.header__left {
+  img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0;
+    margin-right: 8px;
+  }
+
+  a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
 }
 
 .header__right {
