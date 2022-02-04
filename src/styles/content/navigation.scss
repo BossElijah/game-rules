@@ -9,16 +9,17 @@ header {
   background: $color-primary;
   color: #fff;
   padding: 0 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.header__left {
+.header__left a {
+  height: 100%;
   display: flex;
   align-items: center;
+  text-transform: uppercase;
 }
 
 .header__right {
-
-
   .dropdown {
     height: 100%;
 
@@ -41,7 +42,7 @@ header {
   .dropdown-content {
     display: none;
     background: #fff;
-    box-shadow: 0 2px 11px 0 rgba(#000, .75);
+    box-shadow: 0 2px 11px 0 rgba(#000, 0.75);
   }
 
   .dropdown-content a {
@@ -49,7 +50,6 @@ header {
     display: flex;
     justify-content: center;
     padding: 10px;
-    text-decoration: none;
     color: #333;
 
     &:hover {
@@ -57,4 +57,3 @@ header {
     }
   }
 }
-
