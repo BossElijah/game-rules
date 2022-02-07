@@ -1,9 +1,10 @@
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link, Navigate } from 'react-router-dom';
 import Bang from './components/Bang';
 import Dart from './components/Dart';
 import Ludo from './components/Ludo';
 import './styles/styles.scss';
 import { Helmet } from 'react-helmet';
+import Games from './components/Games';
 
 const App = () => (
   <>
@@ -18,7 +19,9 @@ const App = () => (
       </div>
       <div className="header__right">
         <div className="dropdown">
-          <div className="dropbtn">Games</div>
+          <Link to="/games" className="dropbtn">
+            Games
+          </Link>
           <div className="dropdown-content">
             <Link to="/games/dart">Dart</Link>
             <Link to="/games/bang">Bang</Link>
@@ -30,12 +33,11 @@ const App = () => (
 
     <div className="content">
       <Routes>
-        <Route path="/" element={<h1>Home</h1>} />
-        <Route exact path="/games">
-          <Route exact path="bang" element={<Bang />} />
-          <Route exact path="dart" element={<Dart />} />
-          <Route exact path="ludo" element={<Ludo />} />
-        </Route>
+        <Route exact path="games" element={<Games />} />
+        <Route exact path="games/bang" element={<Bang />} />
+        <Route exact path="games/dart" element={<Dart />} />
+        <Route exact path="games/ludo" element={<Ludo />} />
+        <Route path="*" element={<Navigate to="/games" />} />
       </Routes>
     </div>
   </>
