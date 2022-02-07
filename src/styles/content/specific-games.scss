@@ -1,0 +1,28 @@
+.bang {
+  .icon-and-text {
+    display: flex;
+    gap: 8px;
+
+    img {
+      width: 20px;
+      height: 20px;
+      margin-bottom: 0;
+    }
+  }
+
+  .img-in-text {
+    margin-bottom: 0;
+    height: 20px;
+  }
+
+  .curiosity {
+    display: flex;
+    gap: 16px;
+  }
+}
+
+.matador {
+  .money-text {
+    font-weight: 600;
+  }
+}

@@ -34,8 +34,10 @@ header {
 
     &:hover {
       background: $color-primary--hover;
+
       .dropdown-content {
         display: block;
+        transform: translateY(0);
       }
     }
   }
@@ -52,6 +54,9 @@ header {
     display: none;
     background: #fff;
     box-shadow: 0 2px 11px 0 rgba(#000, 0.75);
+    transform: translateY(-100%);
+    // TODO: make transition work
+    transition: transform .25s ease;
   }
 
   .dropdown-content a {

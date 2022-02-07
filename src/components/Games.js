@@ -19,6 +19,10 @@ const Games = () => {
     ).innerText = `You successfully requested rules for "${game}"`;
 
     e.target.reset();
+
+    setTimeout(() => {
+      window.location.reload();
+    }, 20000);
   };
 
   return (

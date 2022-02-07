@@ -5,6 +5,7 @@ import Ludo from './components/Ludo';
 import './styles/styles.scss';
 import { Helmet } from 'react-helmet';
 import Games from './components/Games';
+import Matador from './components/Matador';
 
 const App = () => (
   <>
@@ -26,6 +27,7 @@ const App = () => (
             <Link to="/games/dart">Dart</Link>
             <Link to="/games/bang">Bang</Link>
             <Link to="/games/ludo">Ludo</Link>
+            <Link to="/games/matador">Matador</Link>
           </div>
         </div>
       </div>
@@ -37,6 +39,7 @@ const App = () => (
         <Route exact path="games/bang" element={<Bang />} />
         <Route exact path="games/dart" element={<Dart />} />
         <Route exact path="games/ludo" element={<Ludo />} />
+        <Route exact path="games/matador" element={<Matador />} />
         <Route path="*" element={<Navigate to="/games" />} />
       </Routes>
     </div>
