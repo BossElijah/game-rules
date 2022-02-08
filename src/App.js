@@ -20,14 +20,14 @@ const App = () => (
       </div>
       <div className="header__right">
         <div className="dropdown">
-          <Link to="/games" className="dropbtn">
+          <Link to="/" className="dropbtn">
             Games
           </Link>
           <div className="dropdown-content">
-            <Link to="/games/dart">Dart</Link>
-            <Link to="/games/bang">Bang</Link>
-            <Link to="/games/ludo">Ludo</Link>
-            <Link to="/games/matador">Matador</Link>
+            <Link to="/dart">Dart</Link>
+            <Link to="/bang">Bang</Link>
+            <Link to="/ludo">Ludo</Link>
+            <Link to="/matador">Matador</Link>
           </div>
         </div>
       </div>
@@ -35,12 +35,12 @@ const App = () => (
 
     <div className="content">
       <Routes>
-        <Route exact path="games" element={<Games />} />
-        <Route exact path="games/bang" element={<Bang />} />
-        <Route exact path="games/dart" element={<Dart />} />
-        <Route exact path="games/ludo" element={<Ludo />} />
-        <Route exact path="games/matador" element={<Matador />} />
-        <Route path="*" element={<Navigate to="/games" />} />
+        <Route exact path="/" element={<Games />} />
+        <Route exact path="/bang" element={<Bang />} />
+        <Route exact path="/dart" element={<Dart />} />
+        <Route exact path="/ludo" element={<Ludo />} />
+        <Route exact path="/matador" element={<Matador />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </div>
   </>
