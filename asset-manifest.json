@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/game-rules/static/css/main.8d944187.css",
+    "main.js": "/game-rules/static/js/main.93e93000.js",
+    "static/js/787.6ef916b4.chunk.js": "/game-rules/static/js/787.6ef916b4.chunk.js",
+    "index.html": "/game-rules/index.html",
+    "main.8d944187.css.map": "/game-rules/static/css/main.8d944187.css.map",
+    "main.93e93000.js.map": "/game-rules/static/js/main.93e93000.js.map",
+    "787.6ef916b4.chunk.js.map": "/game-rules/static/js/787.6ef916b4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8d944187.css",
+    "static/js/main.93e93000.js"
+  ]
+}
